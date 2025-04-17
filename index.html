@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Nadu Nattu Sakkarai Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Government Header -->
+    <header class="govt-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <img src="logo.jpeg" 
+                         alt="Tamil Nadu Government Logo" class="govt-logo">
+                </div>
+                <div class="col-md-8 text-center">
+                    <h1 class="govt-title">தமிழ்நாடு அரசு</h1>
+                    <h2 class="govt-subtitle">Tamil Nadu Government</h2>
+                    <h3 class="dept-title">இயற்கை சர்க்கரை விற்பனை மையம்<br>Nattu Sakkarai Sales Portal</h3>
+                </div>
+                <div class="col-md-2 text-end">
+                    <img src="niral.png" 
+                         alt="TN Portal Logo" class="portal-logo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark govt-nav">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">முகப்பு</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">விவரங்கள்</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">விதிமுறைகள்</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">தொடர்புக்கு</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">உதவி</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <div class="row">
+            <!-- Farmer Registration Form -->
+            <div class="col-lg-6">
+                <div class="card govt-card">
+                    <div class="card-header govt-card-header">
+                        <h4>இயற்கை சர்க்கரை பதிவு படிவம்<br>Nattu Sakkarai Registration Form</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="farmerForm">
+                            <div class="mb-3">
+                                <label for="farmerName" class="form-label">விவசாயியின் பெயர் / Farmer Name</label>
+                                <input type="text" class="form-control" id="farmerName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="govtId" class="form-label">அரசு அடையாள எண் / Govt ID Number</label>
+                                <input type="text" class="form-control" id="govtId" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">தொலைபேசி எண் / Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="district" class="form-label">மாவட்டம் / District</label>
+                                <select class="form-select" id="district" required>
+                                    <option value="">தேர்ந்தெடுக்கவும் / Select</option>
+                                    <option value="Ariyalur">Ariyalur</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Coimbatore">Coimbatore</option>
+                                    <option value="Cuddalore">Cuddalore</option>
+                                    <option value="Dharmapuri">Dharmapuri</option>
+                                    <option value="Dindigul">Dindigul</option>
+                                    <option value="Erode">Erode</option>
+                                    <option value="Kallakurichi">Kallakurichi</option>
+                                    <option value="Kancheepuram">Kancheepuram</option>
+                                    <option value="Karur">Karur</option>
+                                    <option value="Krishnagiri">Krishnagiri</option>
+                                    <option value="Madurai">Madurai</option>
+                                    <option value="Nagapattinam">Nagapattinam</option>
+                                    <option value="Namakkal">Namakkal</option>
+                                    <option value="Nilgiris">Nilgiris</option>
+                                    <option value="Perambalur">Perambalur</option>
+                                    <option value="Pudukottai">Pudukottai</option>
+                                    <option value="Ramanathapuram">Ramanathapuram</option>
+                                    <option value="Salem">Salem</option>
+                                    <option value="Sivagangai">Sivagangai</option>
+                                    <option value="Thanjavur">Thanjavur</option>
+                                    <option value="Theni">Theni</option>
+                                    <option value="Thiruvallur">Thiruvallur</option>
+                                    <option value="Thiruvarur">Thiruvarur</option>
+                                    <option value="Thoothukudi">Thoothukudi</option>
+                                    <option value="Tiruchirappalli">Tiruchirappalli</option>
+                                    <option value="Tirunelveli">Tirunelveli</option>
+                                    <option value="Tirupathur">Tirupathur</option>
+                                    <option value="Tiruppur">Tiruppur</option>
+                                    <option value="Tiruvannamalai">Tiruvannamalai</option>
+                                    <option value="Vellore">Vellore</option>
+                                    <option value="Viluppuram">Viluppuram</option>
+                                    <option value="Virudhunagar">Virudhunagar</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="sakkaraiKg" class="form-label">இயற்கை சர்க்கரை அளவு (கிலோ) / Nattu Sakkarai Quantity (kg)</label>
+                                <input type="number" class="form-control" id="sakkaraiKg" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="price" class="form-label">விலை (கிலோவுக்கு) / Price (per kg)</label>
+                                <input type="number" class="form-control" id="price" required>
+                            </div>
+                            <button type="submit" class="btn govt-btn">பதிவு செய்க / Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Farmer Listings -->
+            <div class="col-lg-6">
+                <div class="card govt-card">
+                    <div class="card-header govt-card-header">
+                        <h4>இயற்கை சர்க்கரை விவசாயிகள் பட்டியல்<br>Nattu Sakkarai Farmers List</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table govt-table" id="farmersTable">
+                                <thead>
+                                    <tr>
+                                        <th>பெயர் / Name</th>
+                                        <th>மாவட்டம் / District</th>
+                                        <th>அளவு (கிலோ) / Qty (kg)</th>
+                                        <th>விலை / Price</th>
+                                        <th>செயல் / Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Farmer data will be inserted here by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="govt-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>தொடர்புக்கு / Contact Us</h5>
+                    <p>இயற்கை சர்க்கரை விற்பனை மையம்<br>
+                    Nattu Sakkarai Sales Center<br>
+                    தமிழ்நாடு அரசு<br>
+                    Tamil Nadu Government<br>
+                    தொலைபேசி: 044-12345678</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <img src="OIP.jpeg" alt="TN Footer Logo" class="footer-logo">
+                    <p class="copyright">© 2023 Tamil Nadu Government. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Purchase Modal -->
+    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header govt-card-header">
+                    <h5 class="modal-title">இயற்கை சர்க்கரை வாங்குதல்<br>Purchase Nattu Sakkarai</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="purchaseForm">
+                        <input type="hidden" id="purchaseFarmerId">
+                        <div class="mb-3">
+                            <label for="buyerName" class="form-label">வாங்குபவர் பெயர் / Buyer Name</label>
+                            <input type="text" class="form-control" id="buyerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="buyerDept" class="form-label">துறை / Department</label>
+                            <input type="text" class="form-control" id="buyerDept" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="buyerId" class="form-label">அரசு அடையாள எண் / Govt ID</label>
+                            <input type="text" class="form-control" id="buyerId" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="purchaseQty" class="form-label">அளவு (கிலோ) / Quantity (kg)</label>
+                            <input type="number" class="form-control" id="purchaseQty" required>
+                        </div>
+                        <button type="submit" class="btn govt-btn">வாங்குக / Purchase</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
